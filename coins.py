@@ -4,10 +4,10 @@ from coffees import espresso, latte, cappuccino
 
 def insert_coin_espresso():
     espresso_cost = coffees_resources["espresso"]["money"]
-    coins = int(input(f"Insert {coffees_resources['espresso']['money']} coins"))
+    coins = float(input(f"Insert {coffees_resources['espresso']['money']} coins: "))
     if coins < espresso_cost:
         rest = espresso_cost - coins
-        coins += input(f"You must put {rest} coins more ")
+        coins += float(input(f"You must put {rest} coins more: "))
         if coins == espresso_cost:
             espresso()
         elif coins > espresso_cost:
@@ -24,10 +24,10 @@ def insert_coin_espresso():
 
 def insert_coin_latte():
     latte_cost = coffees_resources["latte"]["money"]
-    coins = int(input(f"Insert {coffees_resources['latte']['money']} coins"))
+    coins = float(input(f"Insert {coffees_resources['latte']['money']} coins: "))
     if coins < latte_cost:
         rest = latte_cost - coins
-        coins += input(f"You must put {rest} coins more ")
+        coins += float(input(f"You must put {rest} coins more: "))
         if coins == latte_cost:
             latte()
         elif coins > latte_cost:
@@ -44,10 +44,10 @@ def insert_coin_latte():
 
 def insert_coin_cappuccino():
     cappuccino_cost = coffees_resources["cappuccino"]["money"]
-    coins = int(input(f"Insert {coffees_resources['cappuccino']['money']} coins"))
+    coins = float(input(f"Insert {coffees_resources['cappuccino']['money']} coins: "))
     if coins < cappuccino_cost:
         rest = cappuccino_cost - coins
-        coins += input(f"You must put {rest} coins more ")
+        coins += float(input(f"You must put {rest} coins more: "))
         if coins == cappuccino_cost:
             cappuccino()
         elif coins > cappuccino_cost:
