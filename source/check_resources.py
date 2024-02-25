@@ -1,5 +1,5 @@
-from data import coffees_resources
-from coins import insert_coin_espresso, insert_coin_latte, insert_coin_cappuccino
+from source.data import coffees_resources
+from source.coins import insert_coin_espresso, insert_coin_latte, insert_coin_cappuccino
 
 
 def check_resources_espresso():

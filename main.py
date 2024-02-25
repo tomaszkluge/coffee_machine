@@ -1,5 +1,5 @@
-from data import coffees_resources
-from check_resources import check_resources_espresso, check_resources_latte, check_resources_cappuccino
+from source.data import coffees_resources
+from source.check_resources import check_resources_espresso, check_resources_latte, check_resources_cappuccino
 
 
 def what_coffee():
